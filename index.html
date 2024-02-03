@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4f7b8c1103.js" crossorigin="anonymous"></script>
+    <title>Form con HTML5</title>
+</head>
+<body class="d-flex justify-content-center align-items-center" style="height: 100%">
+    <div class="d-flex justify-content-center py-2 pt-3">
+        <div class="pb-0 border border-2 rounded align-middle flex-column justify-content-center align-content-center" style="width:80%">
+            <div class="container-fluid bg-light p-2 border-bottom border-2">
+                <h1>Payment form example</h1>
+            </div>
+            <form class="m-0 mb-0">
+                <div class="p-3">
+                    <div class="row">
+                        <div class="col-12 col-sm-4 ml-2">
+                            <label class="form-label" for="card-input">Card#</label>
+                            <input type="text" class="form-control" id="card-input" placeholder="XXXXXXXXXXXXXXXX" maxlength="16" required>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label class="form-label" for="cvc-input">CVC#</label>
+                            <input type="text" class="form-control" id="cvc-input" placeholder="0000" maxlength="4" required>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                            <label class="form-label" for="amount-input">Amount</label>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-dollar-sign pt-2"></i>   
+                                <input type="text" class="form-control d-inline" id="amount-input" placeholder="Amount" required>
+                            </div>
+                        </div>
+                        <div class="row mt-4 px-0 mx-0">
+                            <div class="col-6">
+                                <label class="form-label" for="name-input">First Name</label>
+                                <input type="text" class="form-control" id="name-input" required></input>
+                            </div>
+                            <div class="col-6">
+                                <label class="form-label" for="lastName-input">Last Name</label>
+                                <input type="text" class="form-control" id="lastName-input" required></input>
+                            </div>
+                        </div>
+                        <div class="row mt-4 px-0 mx-0">
+                            <div class="col-6 col-sm-4">
+                                <label class="form-label" for="city-input">City</label>
+                                <input type="text" class="form-control" id="city-input"></input>
+                            </div>
+                            <div class="col-6 col-sm-4">
+                                <label class="form-label" for="state-input">State</label>
+                                <select class="form-select" id="state-input">
+                                    <option selected>Pick a state</option>
+                                    <option value="a">A</option>
+                                    <option value="b">B</option>
+                                    <option value="c">C</option>
+                                    <option value="d">D</option>
+                                    <option value="e">E</option>
+                                    <option value="f">F</option>
+                                    <option value="g">G</option>
+                                    <option value="h">H</option>
+                                    <option value="i">I</option>
+                                    <option value="j">J</option>
+                                    <option value="k">K</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <label class="form-label" for="postal-input">Postal Code</label>
+                                <input type="text" class="form-control" id="postal-input" required></input>
+                            </div>
+                        </div>
+                        <div class="row mt-4 px-0 mx-0">
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <label class="form-label" for="name-input">We accept</label>
+                                <div class="d-flex justify-content-start">
+                                    <div class="d-flex bg-secondary p-2 rounded">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" value="mastercard" name="cards" id="master-check"></input>
+                                            <label class="form-check-label" for="master-check"><i class="fa-brands fa-cc-mastercard" style="color:white; font-size:1.2rem"></i></label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input"  type="radio" value="visa" name="cards" id="visa-check"></input>
+                                            <label class="form-check-label" for="visa-check"><i class="fa-brands fa-cc-visa" style="color:white; font-size:1.2rem"></i></label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input"  type="radio" value="diners" name="cards" id="diners-check"></input>
+                                            <label class="form-check-label" for="diners-check"><i class="fa-brands fa-cc-diners-club" style="color:white; font-size:1.2rem"></i></label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input"  type="radio" value="diners" name="cards" id="diners-check"></input>
+                                            <label class="form-check-label" for="diners-check"><i class="fa-brands fa-cc-discover" style="color:white; font-size:1.2rem"></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-6">
+                                <label class="form-label" for="text-area">Message</label>
+                                <textarea class="form-control" id="text-area"></textarea>
+                                <div id="textareaHelp" class="form-text">Add any notes here</div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="container-fluid mt-4 p-0" style="width: 100%;">
+                    <div class="col-12 d-flex justify-content-end border-top border-2 bg-light">
+                        <div class="p-2 me-1">
+                            <button class="btn btn-secondary">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
